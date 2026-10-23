@@ -1,0 +1,10 @@
+{
+  "appId": "open-seo",
+  "installState": "installed",
+  "launchMode": "packaged",
+  "source": {
+    "kind": "github",
+    "url": "https://github.com/every-app/open-seo"
+  },
+  "updatedAt": "2026-09-24T20:43:55.361Z"
+}
