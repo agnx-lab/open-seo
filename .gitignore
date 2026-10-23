@@ -51,3 +51,7 @@ dist-sourcemaps/
 # Agnx 子应用胶水产物必须入库（上游裸 dist 规则会误伤 .agnx/dist）
 !.agnx/dist/
 !.agnx/dist/**
+
+# Agnx 本机运行时状态（勿入库）
+.agnx-debug-rev
+.agnx-open-seo-runtime/

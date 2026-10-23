@@ -1,0 +1,36 @@
+{
+  "id": "open-seo",
+  "name": "OpenSEO",
+  "version": "0.1.0",
+  "description": "Agnx 外置子应用：OpenSEO 整仓 + Docker/preview iframe",
+  "engines": {
+    "agnx": ">=1.0.0"
+  },
+  "main": "./.agnx/dist/index.js",
+  "icon": "./public/favicon.png",
+  "sidecar": {
+    "supervised": true,
+    "ensureTool": ".agnx/tools/ensure-open-seo.mjs",
+    "stateFile": "open-seo.json",
+    "defaultPort": 3001
+  },
+  "guest": {
+    "kind": "web",
+    "auth": "none",
+    "preferStrategy": "auto"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "id": "open-seo.open",
+        "title": "OpenSEO"
+      }
+    ],
+    "panels": [
+      {
+        "id": "open-seo.main",
+        "title": "OpenSEO"
+      }
+    ]
+  }
+}
